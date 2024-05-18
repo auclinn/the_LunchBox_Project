@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>LunchBox</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-quill-pen-line nav__logo-icon"></i> GROUP1
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="problem.html" class="nav__link active-link">Problem</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="solution.html" class="nav__link">Solution</a>
+                        </li>
+                      
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home1.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            WHY FOOD WASTE MATTERS?
+                        </h1>
+                        <p class="home__description">
+                            Food waste is a significant global problem with far-reaching consequences. Explore the environmental, economic, and social impacts of food waste, and understand why it's crucial to address this issue.                        </p>
+
+                    
+                        <a href="#foodwasteph" class="button button--flex">
+                            More <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                        </div>
+                    </section>
+        
+                    <!--==================== more/foodwasteph ====================-->
+                    <section class="about section container" id="foodwasteph">
+                        <div class="about__container grid">
+                            <img id="myImg" src="assets/img/about.png" alt="foodwasteph" class="about__img">
+                
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+                                  <!-- Modal Caption (Image Text) -->
+        
+                            </div>
+        
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById("myModal");
+                                
+                                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                                var img = document.getElementById("myImg");
+                                var modalImg = document.getElementById("img01");
+                                img.onclick = function(){
+                                  modal.style.display = "block";
+                                  modalImg.src = this.src;
+                                  captionText.innerHTML = this.alt;
+                                }
+                                
+                                // Get the <span> element that closes the modal
+                                var span = document.getElementsByClassName("close")[0];
+                                
+                                // When the user clicks on <span> (x), close the modal
+                                span.onclick = function() { 
+                                  modal.style.display = "none";
+                                }
+                                </script>
+        
+        
+                            <div class="about__data">
+                                <h2 class="section__title about__title">
+                                    Food Waste In Philippines
+                                </h2>
+        
+                                <p class="about__description" style="text-align: justify;">
+                                    According to the World Wide Fund Philippines (WWF PH), composting company GreenSpace, about a ton of food waste is collected every week from partner households and businesses in Metro Manila alone. The capital region generates around 2,000 tons or 2 million kilograms of food waste daily. This waste contributes significantly to greenhouse gas emissions and climate change, as rotting food produces methane gas, a potent greenhouse gas.
+                                </p>
+    
+                                <a href="https://news.abs-cbn.com/news/10/04/22/tons-of-food-wasted-as-millions-of-filipinos-go-hungry" class="button--link button--flex" target="_blank">
+                                    <i>Read more</i><i class="ri-arrow-right-down-line button__icon"></i>
+                                </a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </section>
+
+                     <!--==================== generation ====================-->
+                     <section class="questions section">
+                        <h2 class="questions__title container" style="text-align: center;">
+                            Factors Contributing in Food Waste in the Philippines
+                        </h2>
+                        <br>
+                        <br>
+                        
+                        <div class="about__details">
+                            <p class="about__details-description" style="text-align: center;">
+                                <i>These factors highlight the need for targeted strategies to reduce food waste at the household level in the Philippines. <br>
+                                Promoting proper meal planning, portion control, and food storage techniques could help address the root causes of <br>
+                                food waste identified in the studies.</i>
+                            </p><br>
+                            <h3 class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Larger meal portion sizes:
+                            </h3>
+
+                            <p class="about__details-description1">
+                                Households tend to prepare more food than is actually consumed, resulting in leftovers that often <br>
+                                end up being discarded.
+                            </p>
+                            
+
+                            <h3 class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Greater number of household members:
+                            </h3>
+                            <p class="about__details-description1">
+                                Larger families may have a harder time consuming all the prepared food, leading to more waste.                            </p>
+
+                            <h3 class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Higher wealth status:
+                            </h3>
+                            <p class="about__details-description1">
+                                Households with higher wealth and income levels are more likely to waste food. Wealthier families can afford to <br> 
+                                buy more food, some of which may go unconsumed and end up being discarded.                            </p>
+                            
+                    
+                            <br>
+                            <br>
+                        </div>
+
+                    </section>
+        
+                        <!--==================== impactsph ====================-->
+                         <section class="product section container">
+                      
+                                    <h2 style="text-align: center;">
+                                        Impact of Food Waste on Hunger in the Philippines
+                                    </h2>
+                                    <div class="product__container grid">
+                                         <article class="product__card">
+                                            <div class="product__circle"></div>
+                    
+                                            <img src="assets/img/product1.png" alt="" class="product__img">
+                    
+                                            <h3 class="product__title">Magnitude of Hunger</h3>
+                                                                              
+                                        </article>
+                    
+                                        <article class="product__card">
+                                            <div class="product__circle"></div>
+                    
+                                            <img src="assets/img/product2.png" alt="" class="product__img">
+                    
+                                            <h3 class="product__title">Scale of Food Waste</h3>
+                                        
+                    
+                                            
+                                        </article>
+        
+                                        <article class="product__card">
+                                            <div class="product__circle"></div>
+                    
+                                            <img src="assets/img/product3.png" alt="" class="product__img">
+                    
+                                            <h3 class="product__title">Direct Correlation</h3>
+                                        
+                
+                                        </article>
+        
+                                        <article class="product__card">
+                                            <div class="product__circle"></div>
+                    
+                                            <img src="assets/img/product4.png" alt="" class="product__img">
+                    
+                                            <h3 class="product__title">Nutriotional Impact</h3>
+                                     
+                    
+                                         
+                                        </article>
+        
+                                        <article class="product__card">
+                                            <div class="product__circle"></div>
+                    
+                                            <img src="assets/img/product5.png" alt="" class="product__img">
+                    
+                                            <h3 class="product__title">Socioeconomic Implications</h3>                   
+                                          
+                                        </article>
+        
+                                        <article class="product__card">
+                                            <div class="product__circle"></div>
+                    
+                                            <img src="assets/img/product6.png" alt="" class="product__img">
+                    
+                                            <h3 class="product__title">Call to Action</h3>
+                                         
+                     
+                                        </article>
+                                        
+                                                           
+                                      
+                                    </div>
+
+                                    <p class="about__details-description1" style="text-align: justify; color: black; font-size: 15px;">
+                                        Despite millions of Filipinos experiencing food insecurity, a significant amount of food is wasted daily, with the capital region alone generating 2,000 tons of food waste per day. This research underscores the direct correlation between food waste and hunger incidence, emphasizing that the discarded food could potentially alleviate the hunger crisis in the country. Additionally, the economic impact of food waste, amounting to approximately PHP 1.3 billion annually, and the environmental consequences further emphasize the urgent need to address food waste to improve food security, reduce economic losses, and mitigate environmental harm in the Philippines.
+                                      </p>
+                         </section>
+                
+              
+                
+                <!--==================== FOOTER ====================-->
+                <footer class="footer section">
+                    <div class="footer__container container grid">
+                        <div class="footer__content">
+                            <a href="#" class="footer__logo">
+                                <i class="ri-quill-pen-line footer__logo-icon"></i> GROUP1
+                            </a>
+        
+                            <h3 class="footer__title">
+                                Reduce food waste for<br> a happy tummy :)
+                            </h3>
+        
+                        </div>
+        
+                        <div class="footer__content">
+                            <h3 class="footer__title">Members</h3>
+        
+                            <ul class="footer__data">
+                                <li class="footer__information">Banares, Faith Anne</li>
+                                <li class="footer__information">Agno, John Razec</li>
+                                <li class="footer__information">Almario, Joshua</li>                                
+                                <li class="footer__information">Alocillo, Melvin Daryll</li>                                
+                                <li class="footer__information">Angeles, April Haizel</li>                                
+                                <li class="footer__information">Arquillo, Sheena Mae </li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer__content">
+                            <h3 class="footer__title"></h3>
+        
+                            <ul class="footer__data">
+                                                             
+                                <li class="footer__information">Atienza, John Cedric</li>
+                                <li class="footer__information">Atienza, Reziel Ann</li>                                
+                                <li class="footer__information">Awatin, Bernadette</li>                                
+                                <li class="footer__information">Babasa, Brian Neil</li>                                  
+                                <li class="footer__information">Balmes, Clarence Daven</li>
+                                
+                           </ul>
+                        </div>
+
+                        <div class="footer__content">
+                            <h3 class="footer__title">
+                                SUPPORT OUR<br> LUNCHBOX
+                            </h3>
+        
+                            <ul class="footer__data">
+                                <li class="footer__information">Hungry? Get your Lunchbox by donating through GoFundMe.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <p class="footer__copy">&#169; Educational Purposes Only. This is a website from scratch. All rights reserved</p>
+                </footer>
+                
+                <!--=============== SCROLL UP ===============-->
+                <a href="#" class="scrollup" id="scroll-up"> 
+                    <i class="ri-arrow-up-fill scrollup__icon"></i>
+                </a>
+        
+                <!--=============== SCROLL REVEAL ===============-->
+                <script src="assets/js/scrollreveal.min.js"></script>
+                
+                <!--=============== MAIN JS ===============-->
+                <script src="assets/js/main.js"></script>
+            </body>
+        </html>
+        

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <title>LunchBox</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-quill-pen-line nav__logo-icon"></i> GROUP1
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="problem.html" class="nav__link">Problem</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="solution.html" class="nav__link active-link">Solution</a>
+                        </li>
+                       
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+           <!--==================== HOWTO ====================-->
+           <section class="about section container">
+            <br><br>
+            <div class="about__container grid">
+                <img id="myImg" src="assets/img/about.png" alt="foodwasteph" class="about__img">
+    
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                      <!-- Modal Caption (Image Text) -->
+
+                </div>
+
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+                    
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    img.onclick = function(){
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() { 
+                      modal.style.display = "none";
+                    }
+                    </script>
+
+
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        HOW TO REDUCE FOOD WASTE?
+                    </h2>
+
+                    <p class="about__description" style="text-align: justify;">
+                        Various initiatives and solutions are being implemented to combat food waste in the Philippines, addressing the critical issue of wastage while millions go hungry. These efforts encompass a range of strategies aimed at reducing food waste at different levels of society, from individual households to legislative measures:</p>
+
+                        <a href="#listof" class="button button--flex">
+                            More <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+            
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+        </section>
+         <!--==================== listof  ====================-->
+         <section class="questions section" id="listof"><br>
+            <h2 class="questions__title container" style="text-align: center;">
+                Initiatives and Solutions in Food Waste in the Philippines
+            </h2><br><br>
+                <div class="questions__container container grid">
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Promoting the Purchase of "Ugly Produce"
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description" style="text-align: justify;">
+                                Encouraging consumers to buy imperfect or oddly-shaped produce helps prevent these items from being discarded due to cosmetic imperfections. This initiative aims to reduce food waste at the retail level and promote the consumption of nutritious but visually imperfect fruits and vegetables.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Meal Planning and FIFO Practices
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description" style="text-align: justify;">
+                                Advocating for meal planning and the FIFO (first in, first out) method in households and businesses helps prevent food spoilage and ensures that older items are used before newer ones. These practices promote efficient food consumption and reduce unnecessary waste.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Cooking Leftovers
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description" style="text-align: justify;">
+                                Transforming leftovers into new dishes is a practical way to minimize food waste. By creatively repurposing excess food, households can reduce the amount of edible food that ends up in the trash, contributing to a more sustainable approach to food consumption.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Zero Food Waste Act of 2022
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description" style="text-align: justify;">
+                                The proposed Zero Food Waste Act of 2022 aims to establish a system that promotes food waste reduction through redistribution and recycling efforts. This legislative measure seeks to raise awareness, implement strategies for waste reduction, and engage specific government agencies in a national campaign to combat food waste.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Sharing Excess Food
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description" style="text-align: justify;">
+                                Encouraging the sharing of excess food within communities helps prevent surplus items from going to waste. By redistributing food that would otherwise be discarded, individuals and organizations can support those in need and reduce overall food waste.
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Composting & Recycling
+                            </h3>
+                        </header>
+
+                        <div class="questions__content">
+                            <p class="questions__description" style="text-align: justify;">
+                                Initiatives like composting and recycling help reduce food waste by converting organic waste into nutrient-rich soil and reducing the amount of waste sent to landfills. These practices also promote sustainable agriculture and reduce the environmental impact of food production and consumption.
+
+                            </p>
+                        </div>
+                    </div><br><br>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== foodrecoveryhierachy ====================-->
+        <section class="product section container" id="getinvolve">
+            <h2 class="section__title-center" >
+                Food Recovery Hierarchy
+                <br>
+            </h2>
+            <p style="text-align: justify; font-size: 1rem;">
+                The Food Recovery Hierarchy by the EPA is a prioritized framework that outlines actions organizations can take to prevent and divert wasted food effectively. The hierarchy is structured in tiers, with each level focusing on different management strategies for dealing with wasted food. The top tiers of the hierarchy are considered the best ways to prevent and divert food waste as they offer the most benefits for the environment, society, and the economy. 
+                <br>
+            </p>
+              <br>
+    
+          <div class="wrapper">
+            <div class="center-line">
+              <a class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+            </div>
+        
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                  <span class="title" style="color: white ;">Source Reduction</span>
+                </div>
+               <p style="text-align: justify; color: aliceblue; font-size: 12px; ">
+                This tier focuses on preventing food waste in the first place by reducing the amount of surplus food generated throughout the food supply chain. Strategies include accurate forecasting, improved inventory management, and optimizing food production and distribution to match demand.
+                <br>
+               </p>
+              </section>
+            </div>
+        
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                  <span class="title" style="color: white ;">Feed Hungry People</span>
+              
+                </div>
+                <p style="text-align: justify; color: aliceblue; font-size: 12px; ">
+                    This tier emphasizes donating excess, edible food to food banks, soup kitchens, and other charitable organizations to feed people in need. Effective food donation programs can help reduce food insecurity and divert usable food from landfills.
+                   </p>    
+              </section>
+
+            </div>
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                    <span class="title" style="color: white ;">Feed Animals</span>
+        
+                </div>
+                <p style="text-align: justify; color: aliceblue; font-size: 12px; ">
+                    If food is not suitable for human consumption, it can be diverted to feed animals, such as livestock or pets. This option helps reduce the amount of food waste while providing nutritional value to animals.
+                    </p> 
+              </section>
+            </div>
+
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                <span class="title" style="color: white ;">Industrial Uses</span>
+                </div>
+                <p style="text-align: justify; color: aliceblue; font-size: 12px; ">
+                    Food waste that cannot be used for human or animal consumption can be repurposed for industrial uses, such as converting it into biofuel, biogas, or other industrial products.
+                </p>
+              </section>
+            </div>
+
+            <div class="row row-1">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                    <span class="title" style="color: white ;">Composting</span>
+                </div>
+                <p style="text-align: justify; color: aliceblue; font-size: 12px; ">
+                    When food waste cannot be prevented or diverted for other uses, composting is a preferred method to convert the organic matter into a nutrient-rich soil amendment, which can be used to enrich soils and support plant growth.
+                </p>
+              </section>
+
+            </div>
+            <div class="row row-2">
+              <section>
+                <i class="icon fas fa-star"></i>
+                <div class="details">
+                    <span class="title" style="color: white ;">Landfill/Incineration</span>
+               
+                </div>
+                <p style="text-align: justify; color: aliceblue; font-size: 12px; ">
+                    The least preferred option is disposing of food waste in landfills or through incineration, as these methods have the highest environmental impact and do not contribute to the circular economy.
+                </p>
+              </section>
+            </div>
+                  
+        </section>
+        <br><br><br><br>
+                
+                <!--==================== FOOTER ====================-->
+                <footer class="footer section">
+                    <div class="footer__container container grid">
+                        <div class="footer__content">
+                            <a href="#" class="footer__logo">
+                                <i class="ri-quill-pen-line footer__logo-icon"></i> GROUP1
+                            </a>
+        
+                            <h3 class="footer__title">
+                                Reduce food waste for<br> a happy tummy :)
+                            </h3>
+        
+                        </div>
+        
+                        <div class="footer__content">
+                            <h3 class="footer__title">Members</h3>
+        
+                            <ul class="footer__data">
+                                <li class="footer__information">Banares, Faith Anne</li>
+                                <li class="footer__information">Agno, John Razec</li>
+                                <li class="footer__information">Almario, Joshua</li>                                
+                                <li class="footer__information">Alocillo, Melvin Daryll</li>                                
+                                <li class="footer__information">Angeles, April Haizel</li>                                
+                                <li class="footer__information">Arquillo, Sheena Mae </li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer__content">
+                            <h3 class="footer__title"></h3>
+        
+                            <ul class="footer__data">
+                                                             
+                                <li class="footer__information">Atienza, John Cedric</li>
+                                <li class="footer__information">Atienza, Reziel Ann</li>                                
+                                <li class="footer__information">Awatin, Bernadette</li>                                
+                                <li class="footer__information">Babasa, Brian Neil</li>                                  
+                                <li class="footer__information">Balmes, Clarence Daven</li>
+                                
+                           </ul>
+                        </div>
+        
+                        <div class="footer__content">
+                            <h3 class="footer__title">
+                                SUPPORT OUR<br> LUNCHBOX
+                            </h3>
+        
+                            <ul class="footer__data">
+                                <li class="footer__information">Hungry? Get your Lunchbox by donating through GoFundMe.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <p class="footer__copy">&#169; Educational Purposes Only. This is a website from scratch. All rights reserved</p>
+                </footer>
+                
+                <!--=============== SCROLL UP ===============-->
+                <a href="#" class="scrollup" id="scroll-up"> 
+                    <i class="ri-arrow-up-fill scrollup__icon"></i>
+                </a>
+        
+                <!--=============== SCROLL REVEAL ===============-->
+                <script src="assets/js/scrollreveal.min.js"></script>
+                
+                <!--=============== MAIN JS ===============-->
+                <script src="assets/js/main.js"></script>
+            </body>
+        </html>
+        
