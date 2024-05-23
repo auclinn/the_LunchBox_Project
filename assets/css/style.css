@@ -1446,8 +1446,8 @@ about__img{
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prevBtnArrow,
+.nextBtnArrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -1463,19 +1463,19 @@ about__img{
 }
 
 /* Position the "next button" to the right */
-.next {
+.nextBtnArrow {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.prevBtnArrow:hover,
+.nextBtnArrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.NumTexts {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -1483,7 +1483,7 @@ about__img{
   top: 0;
 }
 
-.titlePics {
+.TitleP {
   color: #f2f2f2;
   background-color: #3e6553;
   font-size: 20px;
