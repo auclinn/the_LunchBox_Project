@@ -48,6 +48,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  transition: 300ms;
 }
 
 /* Position the "next button" to the right */
@@ -129,6 +130,16 @@
   height: 100%;
   border: none;
   border-radius: 20px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
         </style>
     </head>
@@ -274,43 +285,43 @@
          <br><br>
          
         <div class="container">
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">1 / 6</div>
             <div class="TitleP">Foods that are edible yet thrown in the trash</div>
             <img src="assets/img/p1.jpg" style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
         
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">2 / 7</div>
             <div class="TitleP">Goods that are wasted due to strict store policies</div>
             <img src="assets/img/p2.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
         
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">3 / 7</div>
             <div class="TitleP">Tons of foods that are discarded</div>
             <img src="assets/img/p3.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
             
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">4 / 7</div>
             <div class="TitleP">A picture from: Best Ever Food Review Show; showing pagpag</div>
             <img src="assets/img/p4.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
         
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">5 / 7</div>
             <div class="TitleP">A picture from: BBC News; showcasing foods derived from pagpag</div>
             <img src="assets/img/p5.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
             
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">6 / 7</div>
             <div class="TitleP">Foodwastes turning into compost</div>
             <img src="assets/img/p6.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
 
-          <div class="mySlides">
+          <div class="mySlides fade">
             <div class="NumTexts">7 / 7</div>
             <div class="TitleP">"Pagpag" : Seeking for food wastes to be recycled, foraging for Survival</div>
             <img src="assets/img/p7.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
@@ -343,7 +354,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("mySlides fade");
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
