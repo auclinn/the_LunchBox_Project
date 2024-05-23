@@ -111,6 +111,25 @@
   opacity: 1;
 }
 
+/* FOR IFRAME Responsivity */
+.iFrameContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+}
         </style>
     </head>
     <body>
@@ -202,9 +221,12 @@
                     <p style="color: rgb(204, 204, 204); text-align: justify;">
                        <i> Please watch the ClimateScience video for further insight.</i>
                     </p>
-                    <iframe width="650" height="400" style="border: none; border-radius: 20px;"
-                    src="https://www.youtube.com/embed/ishA6kry8nc">
-                    </iframe>
+                    <div class="iFrameContainer">
+                        <iframe class="responsive-iframe"
+                        src="https://www.youtube.com/embed/ishA6kry8nc">
+                        </iframe>
+                    </div>
+
                 </div>
                 <br>
                 <hr>
@@ -243,13 +265,14 @@
                 </div>
             </div>
         </section>
-        <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <br><br><br>
-            <h2 style="text-align:center; color: rgb(31, 133, 27);" class="home__title">SDG 2: Zero Hunger</h2>
-            <p style="width: 950px; text-align: justify;  text-justify:inter-word; text-indent: 20px; font-size: 18px;"> SDG 2, or Sustainable Development Goal 2, aims to achieve zero hunger worldwide by ensuring access to safe, nutritious, and sufficient food for all people, particularly the most vulnerable populations, by 2030. This involves promoting sustainable agriculture, supporting small-scale food producers, ensuring equitable access to land, technology, and markets, and addressing the underlying causes of hunger such as poverty, inequality, and lack of access to education and resources.</p>
-            <br>
-            <p style="color: rgb(79, 79, 79);">            Here are the pictures illustrating the significance of SDG 2's objectives in addressing global hunger.</p>
-        </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; padding-left: 20px; padding-right: 20px;">
+            <h2 style="text-align:center; color: var(--first-color);" class="home__title">SDG 2: Zero Hunger</h2>
+         </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; padding-left: 20px; padding-right: 20px;">
+            <p style="max-width: 950px; text-align: justify;  text-justify:inter-word; text-indent: 20px; font-size: 18px; ">SDG 2, or Sustainable Development Goal 2, aims to achieve zero hunger worldwide by ensuring access to safe, nutritious, and sufficient food for all people, particularly the most vulnerable populations, by 2030. This involves promoting sustainable agriculture, supporting small-scale food producers, ensuring equitable access to land, technology, and markets, and addressing the underlying causes of hunger such as poverty, inequality, and lack of access to education and resources.</p> 
+         </div>
+         <br><br>
+         
         <div class="container">
           <div class="mySlides">
             <div class="NumTexts">1 / 6</div>
@@ -265,7 +288,7 @@
         
           <div class="mySlides">
             <div class="NumTexts">3 / 7</div>
-            <div class="TitleP">Tons of foods that are disgarded</div>
+            <div class="TitleP">Tons of foods that are discarded</div>
             <img src="assets/img/p3.jpg"  style="width: 100%; height: 500px; object-fit: cover; border: solid; border-color: #3e6553; border-radius: 20px;">
           </div>
             
@@ -300,10 +323,11 @@
           </div>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; padding-left: 20px; padding-right: 20px;">
            <p style="width: 950px; text-align: justify;  text-justify:inter-word; text-indent: 20px; font-size: 18px;">By aligning the Lunchbox Project with the ambitious goals outlined in SDG 2, which seeks to eradicate hunger globally, our website endeavors to raise awareness about the far-reaching consequences of food waste. Beyond its environmental toll, food waste profoundly affects communities, exacerbating inequalities and hindering progress towards a more sustainable and equitable future. Join us on this journey towards Zero Hunger, where every individual is empowered with access to nutritious food, and where our collective efforts minimize food waste for the betterment of society and the planet alike. <br><br> <strong> Together, let's take meaningful action to address the root causes of hunger and create a world where no one goes to bed hungry.</strong></p> 
 
         </div>
+        
 
 <script>
 let slideIndex = 1;
